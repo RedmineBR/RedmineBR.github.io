@@ -8,7 +8,7 @@ about:
 baseurl: "https://redminebr.github.io"
 url: "https://redminebr.github.io"
 
-allowsearch: true
+allowsearch: false
 
 disqus_shortname: 
 google_analytics: 
