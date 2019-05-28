@@ -3,7 +3,7 @@ description: My Personal Blog
 author: Patrick Kaminski
 logo: 
 github: https://github.com/RedmineBR
-about: Grupo Redmine Brasil
+about: 
 
 baseurl: "https://redminebr.github.io"
 url: "https://redminebr.github.io"
