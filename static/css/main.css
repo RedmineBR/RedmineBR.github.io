@@ -68,10 +68,12 @@ p.info a {
 .menu ul li {
     list-style: none;
     margin: 5px 0;
+    background: #900;
 }
 
 .menu ul li a:hover, .menu ul li a:focus, li.current-menu-item > a{
-    background: #007D72;
+    /*background: #007D72;*/
+    background: #b00;
 }
 li.current-menu-item:before {
     content: "";
