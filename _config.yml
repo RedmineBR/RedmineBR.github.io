@@ -1,1 +1,28 @@
-theme: jekyll-theme-minimal
+title: Redmine Brasil
+description: My Personal Blog
+author: Patrick Kaminski
+logo: 
+github: https://github.com/RedmineBR
+about: Grupo Redmine Brasil
+
+baseurl: "https://redminebr.github.io"
+url: "https://redminebr.github.io"
+
+allowsearch: true
+
+disqus_shortname: 
+google_analytics: 
+
+share:
+  twitter_username: patrixsbs
+  fb_appid: 000000000000
+
+
+enableTags: true
+tagarray: []
+
+paginate: 20
+per_page: 20
+paginate_path: "/page:num/"
+markdown: kramdown
+gems: [jekyll-paginate, jekyll-gist]

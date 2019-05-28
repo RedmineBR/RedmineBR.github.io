@@ -1,0 +1,23 @@
+[
+  {
+    "text": "Início",
+    "url": "/",
+    "icon": "fa-home",
+    "layout": "post"
+  },
+  {
+    "text": "Sobre",
+    "url": "/about/",
+    "icon": "fa-comments"
+  },
+  {
+    "text": "Fornecedores",
+    "url": "/fornecedores",
+    "icon": "fa-desktop"
+  },
+  {
+    "text": "RedConf",
+    "url": "/#",
+    "icon": "fa-graduation-cap",
+  }
+]
