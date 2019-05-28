@@ -10,4 +10,4 @@ Atualmente conta com mais de 700 membros.
 
 Faça parte você também:
 
-**https://groups.google.com/d/forum/redmine-br**
+**[https://groups.google.com/d/forum/redmine-br](https://groups.google.com/d/forum/redmine-br)**
