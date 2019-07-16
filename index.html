@@ -1,62 +1,197 @@
 ---
-layout: default
-title: Início
+layout: page
+title: Redmine Brasil
+permalink: /
 ---
-<div class="well">
-    <div class="list-group">
-      {% for post in paginator.posts %}
-      <div class="list-group-item">
-        <div class="row-action-primary">
-          <i class="fa fa-sticky-note"></i>
-        </div>
-        <div class="row-content">
-          <div class="least-content">{{ post.date | date_to_string }}</div>
-          <h4 class="list-group-item-heading"><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h4>
 
-          <p class="list-group-item-text">{{ post.content | strip_html | truncatewords: 20 }}</p>
+<!-- Slider Start -->
+<section id="slider">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-10 col-md-offset-2">
+        <div class="block">
+          <h1 class="animated fadeInUp">Comunidade Brasileira do Redmine</h1>
+          <p class="animated fadeInUp">Aqui nos reunimos pra compartilhar ideias sobre o Redmine.<br />Seja Bem Vindo!</p>
         </div>
       </div>
-      <div class="list-group-separator"></div>
-      {% endfor %}
     </div>
-   
+  </div>
+</section>
+<!-- Wrapper Start -->
+<section id="intro">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-7 col-sm-12">
+        <div class="block">
+          <div class="section-title">
+            <h2>Sobre o Grupo</h2>
+            <p>Toda história tem o seu início...</p>
+          </div>
+          <p>
+              <strong>Redmine Brasil</strong> é um grupo criado em 2009 com o objetivo de reunir informações sobre o sistema de gerenciamento de projetos Redmine no Brasil.<br />
+              Atualmente conta com mais de 700 membros.<br /><br />
+              Caso tenha alguma dúvida ou queria trocar ideias sobre o Redmine, sinta-se a vontade para juntar-se ao nosso grupo...<br /><br />
+              <a href="https://groups.google.com/d/forum/redmine-br" class="btn btn-view-works">Faça Parte Você Também</a>
+            </p>
+        </div>
+      </div><!-- .col-md-7 close -->
+      <div class="col-md-5 col-sm-12">
+        <div class="block">
+          <img src="img/wrapper-img.png" alt="Img">
+        </div>
+      </div><!-- .col-md-5 close -->
+    </div>
+  </div>
+</section>
 
-    <!-- Pagination links -->
-    {% if paginator.total_pages > 1 %}
-    <ul class="pager">
-      {% if paginator.previous_page %}
-        <li class="previous">
-          <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&laquo;</a>
-        </li>
-      {% else %}
-        <li class="previous disabled"><span aria-hidden="true">&laquo;</span></li>
-      {% endif %}
+<section id="feature">
+<div class="container">
+  <div class="row">
+    <div class="col-md-6 col-md-offset-6">
+      <a href="https://redmine.patrickkaminski.com">
+        <h2>Redmine</h2>
+        <h3>Gerenciamento flexível de projetos</h3>
+      </a>
+      <a href="https://redmine.patrickkaminski.com">
+        <img src="https://redmine.patrickkaminski.com/livro-redmine.png" style="width:200px;">
+      </a>
+      <p>Tenha acesso ao mais recente e completo livro sobre o Redmine</p>
+      <a href="https://redmine.patrickkaminski.com" class="btn btn-view-works">Redmine - Gerenciamento flexível de projetos</a>
+    </div>
+  </div>
+</div>
+</section>
 
-      <li><a href="/">First</a></li>
-
-      {% for page in (1..paginator.total_pages) %}
-        {% if page == paginator.page %}
-          <li class="active">
-             <a>{{ page }}<span class="sr-only">(current)</span></a>
-          </li>
-        {% elsif page == 1 %}
-          <li><a href="/">{{ page }}</a></li>
-        {% else %}
-          <li>
-            <a href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}">{{ page }}</a>
-          </li>
+<!-- Service Start -->
+<section id="service">
+  <div class="container">
+    <div class="row">
+      <div class="section-title">
+        <h2>Principais Funcionalidades</h2>
+        <p>Não conhece o Redmine? Veja abaixo algumas das funcionalidades que ele possui...</p>
+      </div>
+    </div>
+    <div class="row ">
+      <div class="col-sm-6 col-md-3">
+        <div class="service-item">
+          <i class="icon ion-coffee"></i>
+          <h4>Múltiplos Projetos</h4>
+          <p>Através do Redmine é possível gerenciar vários projetos em paralelo, compartilhando informação entre eles</p>
+        </div>
+      </div>
+      <div class="col-sm-6 col-md-3">
+        <div class="service-item">
+          <i class="ion-bug"></i>
+          <h4>Gerenciamento de Tickets</h4>
+          <p>Uma das principais funcionalidades do Redmine é o gerenciamento de tickets, onde é possível controlar as demandas existentes</p>
+        </div>
+      </div>
+      <div class="col-sm-6 col-md-3">
+        <div class="service-item">
+          <i class="ion-clock"></i>
+          <h4>Controle de Tempo</h4>
+          <p>Gerenciamento de tempo através da análise de tempo estimado e realizado, gerando gráfico de Gantt em tempo real</p>
+        </div>
+      </div>
+      <div class="col-sm-6 col-md-3">
+        <div class="service-item">
+          <i class="ion-person-stalker"></i>
+          <h4>Níveis de Permissão</h4>
+          <p>Possibilidade de definir permissões específicas por projetos e grupos de usuários</p>
+        </div>
+      </div>
+    </div>
+    <div class="row ">
+      <div class="col-sm-6 col-md-3">
+        <div class="service-item">
+          <i class="ion-code-working"></i>
+          <h4>Integração com Repositórios</h4>
+          <p>Possibilidade de realizar a integração com sistemas de controle de versões como o GIT, SVN entre outros</p>
+        </div>
+      </div>
+      <div class="col-sm-6 col-md-3">
+        <div class="service-item">
+          <i class="ion-shuffle"></i>
+          <h4>Fluxo de Trabalho</h4>
+          <p>Capacidade de personalizar o fluxo de trabalho de acordo com as necessidades da equipe</p>
+        </div>
+      </div>
+      <div class="col-sm-6 col-md-3">
+        <div class="service-item">
+          <i class="ion-pie-graph"></i>
+          <h4>Consultas Personalizadas</h4>
+          <p>Ferramenta para criação de consultas personalizadas, utilizando filtros</p>
+        </div>
+      </div>
+      <div class="col-sm-6 col-md-3">
+        <div class="service-item">
+          <i class="ion-wifi"></i>
+          <h4>100% Web</h4>
+          <p>Sistema de código aberto totalmente através do navegador do computador ou celular</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Call to action Start -->
+<section id="call-to-action">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="block">
+          <h2>Nós gostamos de ouvir histórias também</h2>
+          <p>Por isso, conte um pouco sobre a sua história com o Redmine, que compartilharemos aqui.</p>
+          <a class="btn btn-default btn-call-to-action" href="#" >Conte-nos Sua História</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Content Start -->
+<section id="testimonial">
+  <div class="container">
+    <div class="row">
+      <div class="section-title text-center">
+        <h2>Informações</h2>
+        <p>Abaixo temos algumas informações atualizadas sobre a nossa comunidade</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-6">
+        {% if site.data.curiosidades.size > 0 %}
+        <div class="block">
+          {% for curiosidade in site.data.curiosidades %}
+          <ul class="counter-box clearfix">
+            <li>
+              <div class="block">
+                <i class="{{ curiosidade.icon }}"></i>
+                <h4 class="counter">{{ curiosidade.counter }}</h4>
+                <span>{{ curiosidade.text }}</span>
+              </div>
+            </li>
+            {% endfor %}
+          </ul>
+        </div>
         {% endif %}
-      {% endfor %}
-
-      <li><a href="/page{{ paginator.total_pages }}/">Last</a></li>
-
-      {% if paginator.next_page %}
-        <li class="next">
-          <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">&raquo;</a>
-        </li>
-      {% else %}
-        <li class="next disabled"><span>&raquo;</span></li>
-      {% endif %}
-    </ul>
-    {% endif %}
-</div><!-- end #home -->
+      </div>
+      <div class="col-md-6">
+        {% if site.data.testimonials.size > 0 %}
+        <div class="testimonial-carousel">
+          <div id="testimonial-slider" class="owl-carousel">
+            {% for tm in site.data.testimonials %}
+            <div>
+                <img src="img/cotation.png" alt="IMG">
+                <p>{{ tm.testimonial }}</p>
+                <div class="user">
+                  <img src="{{ tm.image }}" alt="Pepole">
+                  <p><span>{{ tm.name }}</span> {{ tm.title }}</p>
+                </div>
+            </div>
+            {% endfor %}
+          </div>
+        </div>
+        {% endif %}
+      </div>
+    </div>
+  </div>
+</section>

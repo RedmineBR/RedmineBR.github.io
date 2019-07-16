@@ -1,28 +1,38 @@
+
+exclude:
+  - "/vendor/"
+  - "Gemfile"
+  - "Gemfile.lock"
+  - "README.md"
+  - "LICENSE.md"
+  - "*.gemspec"
+
+keep_files:
+  - "CNAME"
+  - ".git"
+  - ".gitignore"
+
+
+# Site settings
 title: Redmine Brasil
-description: My Personal Blog
-author: Patrick Kaminski
-logo: 
-github: https://github.com/RedmineBR
-about: 
-
-baseurl: "https://redminebr.github.io"
-url: "https://redminebr.github.io"
-
-allowsearch: false
-
-disqus_shortname: 
-google_analytics: 
-
-share:
-  twitter_username: patrixsbs
-  fb_appid: 000000000000
+subtitle: "Comunidade brasileira de usuários do Redmine"
+url: "https://redminebr.github.io" # the base hostname & protocol for your site
+# baseurl: "/the/subpath/of/your/site" # Set this value to "" if you want your site to be root
+baseurl: ""
+cover: "/assets/cover.png"
+logo: "/assets/logo.png"
 
 
 enableTags: true
 tagarray: []
 
-paginate: 20
-per_page: 20
-paginate_path: "/page:num/"
+# Build settings
 markdown: kramdown
-gems: [jekyll-paginate, jekyll-gist]
+
+# Google analytics
+# ga_tracking_id: "UA-XXXX-1"
+
+# Category descriptions (for archive pages)
+descriptions:
+  - cat: jekyll
+    desc: "Posts describing Jekyll setup techniques."

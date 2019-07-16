@@ -1,9 +1,9 @@
 [
 	{
 		"name": "Patrick Kaminski",
-		"image": "placeholder.jpg",
+		"image": "https://patrickkaminski.com/logo-patrick-kaminski.jpg",
 		"url": "https://patrickkaminski.com/",
-		"date": "Jan 2014",
+		"cidade": "Chapecó/SC",
 		"tags": ["Instalação", "Consultoria", "Treinamento", "Personalização", "Hospedagem"]
 	}
 ]
