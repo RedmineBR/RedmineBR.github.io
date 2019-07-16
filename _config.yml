@@ -18,7 +18,7 @@ title: Redmine Brasil
 subtitle: "Comunidade brasileira de usuários do Redmine"
 url: "https://redminebr.github.io" # the base hostname & protocol for your site
 # baseurl: "/the/subpath/of/your/site" # Set this value to "" if you want your site to be root
-baseurl: ""
+baseurl: "https://redminebr.github.io"
 cover: "/assets/cover.png"
 logo: "/assets/logo.png"
 
