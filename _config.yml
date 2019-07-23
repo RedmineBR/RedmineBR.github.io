@@ -14,7 +14,7 @@ keep_files:
 
 
 # Site settings
-title: Redmine Brasil
+title: Redmine Brasil - Comunidade brasileira de usuários do Redmine
 subtitle: "Comunidade brasileira de usuários do Redmine"
 url: "https://redminebr.github.io" # the base hostname & protocol for your site
 # baseurl: "/the/subpath/of/your/site" # Set this value to "" if you want your site to be root
